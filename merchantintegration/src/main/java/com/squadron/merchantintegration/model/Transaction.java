@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 
 public class Transaction {
