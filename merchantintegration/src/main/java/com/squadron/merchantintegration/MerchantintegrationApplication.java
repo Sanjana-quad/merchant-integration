@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MerchantintegrationApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MerchantintegrationApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MerchantintegrationApplication.class, args);
+    }
 
 }
