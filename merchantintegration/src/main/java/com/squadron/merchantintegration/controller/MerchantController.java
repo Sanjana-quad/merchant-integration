@@ -22,7 +22,7 @@ public class MerchantController {
     @Autowired
     private TransactionService transactionService;
 
-    // Register Merchant
+
 //    @PostMapping("/registerMerchant")
 //    public Merchant registerMerchant(@RequestBody Merchant merchant) {
 //        return merchantService.registerMerchant(merchant);
@@ -33,25 +33,21 @@ public class MerchantController {
         return ResponseEntity.ok(savedMerchant);
     }
 
-    // Find Merchant by Email
     @GetMapping("/merchantByEmail")
     public Optional<Merchant> getMerchantByEmail(@RequestParam String email) {
         return merchantService.findMerchantByEmail(email);
     }
 
-    // Initiate Payment
     @PostMapping("/initiatePayment")
     public Transaction initiatePayment(@RequestBody Transaction transaction) {
         return transactionService.initiatePayment(transaction);
     }
 
-    // Get Transactions by Status
     @GetMapping("/transactionsByStatus")
     public List<Transaction> getTransactionsByStatus(@RequestParam String status) {
         return transactionService.getTransactionsByStatus(status);
     }
 
-    // Get Transaction By Id
     @GetMapping("/getTransactionStatus")
     public Optional<Transaction> getTransactionById(@RequestParam Long id) {
         return transactionService.getTransactionById(id);

@@ -26,6 +26,6 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
 
-    // Add other exception handlers for business logic exceptions here
+    //i'll add more in future
 }
 

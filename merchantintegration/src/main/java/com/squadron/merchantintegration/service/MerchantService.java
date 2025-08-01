@@ -20,6 +20,6 @@ public class MerchantService {
         return merchantRepository.findByEmail(email);
     }
 
-    // Add more business logic as needed
+    //add more service
 }
 

@@ -1,0 +1,12 @@
+### Register Merchant
+POST http://localhost:8080/api/registerMerchant
+Content-Type: application/json
+
+{
+  "name": "Acme Corp",
+  "email": "contact@acmecorp.com",
+  "active": true
+}
+
+### Get Transaction Status
+GET http://localhost:8080/api/getTransactionStatus?id=1
